@@ -31,21 +31,6 @@ class User(db.Model):
                 "email" : self.email }
         return info
 
-"""
-Rowida = User(username = "Rowida" , fullname = "Rowida Nagah" , email = "rowidanagah@gmail.com",password_hash 
-= "rowidanagah" )
-Rowida.set_password(password
-#Rana = User(username = "Rana" , fullname = "Rana Ram" , password_hash = "Rna3rdeng" , email = "rana12@gmail.com",password_hash 
-= "rowidanagah" )
-
-
-password = "DANA"
-u = User()
-u.username = "username" 
-u.fullname = "fullname"
-u.email = "email" 
-u.set_password(password) 
-"""
 db.create_all()
 
 
@@ -114,7 +99,5 @@ def register():
 
 
 
-"""if not os.path.exists(databasePath):
-    db.create_all() """
 if __name__ == "__main__":
     app.run(debug = True)
